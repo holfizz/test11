@@ -1,0 +1,165 @@
+* {
+	padding: 0;
+	margin: 0;
+	outline: none;
+	background: none;
+	border: none;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+a,
+li {
+	cursor: pointer;
+}
+body {
+	overflow-x: hidden;
+}
+.header {
+	width: 100vw;
+	height: 100px;
+	background: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.link {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 60%;
+}
+
+.link > a {
+	color: black;
+}
+#home {
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.slider {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+	padding: 20px;
+}
+.bg__slide {
+	width: 20%;
+}
+.bg__slide > img {
+	width: 100%;
+	border-radius: 10px;
+}
+.current__slide {
+	width: 60%;
+}
+.current__slide > img {
+	width: 100%;
+	border-radius: 10px;
+}
+.arr {
+	font-size: 30px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.slide_history {
+	width: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+.slide_history > img {
+	border-radius: 5px;
+	cursor: pointer;
+	user-select: none;
+}
+.current_his {
+	opacity: 0.5;
+}
+#auth {
+	margin-top: 200px;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#auth > form {
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 10px;
+}
+.auth_form > input {
+	width: 300px;
+	height: 40px;
+	border-radius: 10px;
+	border: 2px solid black;
+	padding: 10px;
+}
+.auth_form > button {
+	width: 100px;
+	height: 40px;
+	background: #000;
+	border-radius: 10px;
+	color: white;
+}
+.auth_form > a {
+	color: black;
+	text-decoration: underline;
+}
+.about > video {
+	width: 300px;
+}
+#new_books {
+	margin-top: 200px;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.books_list {
+	display: flex;
+	align-items: flex-start; /* Изменено с center на flex-start */
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: flex-start; /* Изменено с center на flex-start */
+	padding: 0 20px; /* Добавляем отступы по бокам */
+	gap: 10px;
+}
+
+.book {
+	width: 500px;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 10px;
+}
+.book > img {
+	width: 90%;
+}
+.book > h1 {
+	margin: 10px 0;
+}
+.book > a {
+	margin: 10px 0;
+	text-decoration: underline;
+	font-weight: 500;
+	color: #3d3d3d;
+}
+#search {
+	margin-top: 200px;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}

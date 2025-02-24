@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title></title>
+	</head>
+	<body>
+		<header class="header">
+			<img width="200px" class="logo" src="./assets/logo.png" alt="logo" />
+			<div class="link">
+				<a href="./registration.html">Регистрация</a>
+				<a href="#auth">Авторизация</a>
+				<a href="./profile.html">Личный кабинет</a>
+				<a href="#about">О нас</a>
+				<a href="#new_books">Новые книги</a>
+				<a href="#search">Поиск</a>
+				<a href="#reviews">Отзывы</a>
+				<a href="#contacts">Контакты</a>
+				<a href="./index-dark.html">Темная тема</a>
+			</div>
+		</header>
+	</body>
+	<div id="home">
+		<div class="slider">
+			<button class="arr">&larr;</button>
+			<div class="slide bg__slide">
+				<img src="./assets/slide_img.png" alt="slide" />
+			</div>
+			<div class="slide current__slide">
+				<img src="./assets/slide_img.png" alt="slide" />
+				<h1>Читайте любимые книги онлайн</h1>
+				<p>Загружайте свои книги или читайте книги, добавленные нами</p>
+				<button>Начать чтение</button>
+			</div>
+			<div class="slide bg__slide">
+				<img src="./assets/slide_img.png" alt="slide" />
+			</div>
+			<button class="arr">&rarr;</button>
+		</div>
+		<div class="slide_history">
+			<img src="./assets/slide_img.png" width="50px" alt="slide" />
+			<img
+				src="./assets/slide_img.png"
+				width="50px"
+				class="current_his"
+				alt="slide"
+			/>
+			<img src="./assets/slide_img.png" width="50px" alt="slide" />
+			<img src="./assets/slide_img.png" width="50px" alt="slide" />
+		</div>
+	</div>
+	<div id="auth">
+		<h1>Войти</h1>
+		<form class="auth_form">
+			<input placeholder="Введите почту" type="text" />
+			<input placeholder="Введите пароль" type="password" />
+			<button>Войти</button>
+			<a href="#">Забыл пароль</a>
+		</form>
+	</div>
+	<div id="about">
+		<video width="600px" src="./assets/video.mp4" controls></video>
+	</div>
+	<div id="new_books">
+		<h1>Новые книги</h1>
+		<div class="books_list">
+			<div class="book">
+				<img src="./assets/book_front.png" alt="book" />
+				<h1>Lorem ipsum dolor sit.</h1>
+				<p>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+					praesentium, blanditiis sapiente ab odit provident laboriosam esse
+					doloribus est voluptate aliquam obcaecati et labore impedit?
+				</p>
+				<a href="./read.html">Читать</a>
+			</div>
+			<div class="book">
+				<img src="./assets/book_front.png" alt="book" />
+				<h1>Lorem ipsum dolor sit.</h1>
+				<p>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+					praesentium, blanditiis sapiente ab odit provident laboriosam esse
+					doloribus est voluptate aliquam obcaecati et labore impedit?
+				</p>
+				<a href="./read.html">Читать</a>
+			</div>
+			<div class="book">
+				<img src="./assets/book_front.png" alt="book" />
+				<h1>Lorem ipsum dolor sit.</h1>
+				<p>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+					praesentium, blanditiis sapiente ab odit provident laboriosam esse
+					doloribus est voluptate aliquam obcaecati et labore impedit?
+				</p>
+				<a href="./read.html">Читать</a>
+			</div>
+			<div class="book">
+				<img src="./assets/book_front.png" alt="book" />
+				<h1>Lorem ipsum dolor sit.</h1>
+				<p>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+					praesentium, blanditiis sapiente ab odit provident laboriosam esse
+					doloribus est voluptate aliquam obcaecati et labore impedit?
+				</p>
+				<a href="./read.html">Читать</a>
+			</div>
+			<div class="book">
+				<img src="./assets/book_front.png" alt="book" />
+				<h1>Lorem ipsum dolor sit.</h1>
+				<p>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+					praesentium, blanditiis sapiente ab odit provident laboriosam esse
+					doloribus est voluptate aliquam obcaecati et labore impedit?
+				</p>
+				<a href="./read.html">Читать</a>
+			</div>
+		</div>
+		<div id="#search">
+			<h1>Поиск</h1>
+			<input list="list_input" type="text" />
+			<datalist id="list_input">
+				<option value="Книга 1"></option>
+				<option value="Книга 2"></option>
+				<option value="Книга 3"></option>
+				<option value="Книга 4"></option>
+			</datalist>
+			<select name="select_gender" id="">
+				<option value="male">мужской</option>
+				<option value="female">женский</option>
+			</select>
+			<input type="date" min="2025-02-26" />
+		</div>
+	</div>
+</html>
